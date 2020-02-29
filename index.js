@@ -47,3 +47,8 @@ function unflipCards() {
     resetBoard();
   }, 1500);
 }
+
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
