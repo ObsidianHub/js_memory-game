@@ -22,4 +22,9 @@ function flipCard() {
 
     return;
   }
+
+  // second click
+  secondCard = this;
+
+  checkForMatch();
 }
