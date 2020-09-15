@@ -34,3 +34,10 @@ function checkForMatch() {
 
   isMatch ? disableCards() : unflipCards();
 }
+
+function disableCards() {
+  firstCard.removeEventListener("click", flipCard);
+  secondCard.removeEventListener("click", flipCard);
+
+  resetBoard();
+}
